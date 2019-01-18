@@ -1,11 +1,11 @@
-# gatsby-plugin-gtag
-### Add Google Analytics gtag.js to a site
+# gatsby-plugin-gtag-outbound
+### Add Google Analytics gtag.js to a site with Outbound linking
 
 Does the same thing as
 [gatsby-plugin-google-analytics](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-google-analytics),
 but instead of adding [deprecated analytics.js](https://developers.google.com/analytics/devguides/collection/gtagjs/migration)
 script, it uses
-[gtag.js](https://developers.google.com/analytics/devguides/collection/gtagjs/).
+[gtag.js](https://developers.google.com/analytics/devguides/collection/gtagjs/). Includes Outbound Link module.
 
 ## Install
 
@@ -21,7 +21,7 @@ npm install --save gatsby-plugin-gtag
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: `gatsby-plugin-gtag-outbound`,
       options: {
         // your google analytics tracking id
         trackingId: `UA-XXXXXXXX-X`,
@@ -35,6 +35,12 @@ module.exports = {
 }
 
 ```
+
+## Outbound Links
+`import { OutboundLink } from 'gatsby-plugin-gtag-outbound'`
+
+Use like any other anchor tag in your component:
+`<OutboundLink href='yourwebsite.example' />
 
 ## Options
 
