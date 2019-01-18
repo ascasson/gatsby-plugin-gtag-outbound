@@ -40,7 +40,7 @@ module.exports = {
 `import { OutboundLink } from 'gatsby-plugin-gtag-outbound'`
 
 Use like any other anchor tag in your component:
-`<OutboundLink href='yourwebsite.example' />
+`<OutboundLink href='yourwebsite.example' />`
 
 ## Options
 
