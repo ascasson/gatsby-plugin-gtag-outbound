@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-gtag-outbound",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom gatsby plugin to add Google Analytics gtag.js to a site, including Outbound Links.",
   "main": "index.js",
   "scripts": {
